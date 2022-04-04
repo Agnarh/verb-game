@@ -1,0 +1,13 @@
+<div class="option-list">
+    <div class="verb-title">{{verb}}</div>
+    <ul class="list">
+        <li
+            class="option-item"
+            [ngClass]="{ 'correct': clickedId !== null && option.isCorrect, 'wrong': clickedId === option.id && !option.isCorrect }"
+            *ngFor="let option of options"
+            (click)="onOptionItemClick(option.id)"
+        >
+            {{option.text}}
+        </li>
+    </ul>
+</div>

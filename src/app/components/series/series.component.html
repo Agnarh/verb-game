@@ -1,0 +1,6 @@
+<app-counter [current]="current" [total]="total"></app-counter>
+<app-option-list
+    [options]="series[current-1].options"
+    [verb]="series[current-1].verb"
+    (onIncrement)="increment()"
+></app-option-list>

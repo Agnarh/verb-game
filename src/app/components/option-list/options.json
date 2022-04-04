@@ -1,0 +1,48 @@
+{
+    "options": [
+        {
+            "id": 1,
+            "text": "was/were, been",
+            "isCorrect": true
+        },
+        {
+            "id": 2,
+            "text": "been, was/were",
+            "isCorrect": false
+        },
+        {
+            "id": 3,
+            "text": "am, was/were",
+            "isCorrect": false
+        },
+        {
+            "id": 4,
+            "text": "am, been",
+            "isCorrect": false
+        }
+    ],
+    "verbs": [
+        {
+            "id": 1,
+            "text": "to be"
+        },
+        {
+            "id": 2,
+            "text": "become"
+        }
+    ],
+    "data": [
+        {
+            "id": 1,
+            "verbId": 1,
+            "correct": ["was/were, been"],
+            "incorrect": ["been, was/were", "was, were", "been, am", "are/were, been"]
+        },
+        {
+            "id": 2,
+            "verbId": 2,
+            "correct": ["became, become"],
+            "incorrect": ["became, became", "become, became", "becamed, becomed", "become, become"]
+        }
+    ]
+}
