@@ -5,13 +5,19 @@ import { AppComponent } from './app.component';
 import { OptionListComponent } from './components/option-list/option-list.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { SeriesComponent } from './components/series/series.component';
+import { ViewComponent } from './components/view/view.component';
+import { StartComponent } from './components/start/start.component';
+import { ResultsComponent } from './components/results/results.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         OptionListComponent,
         CounterComponent,
-        SeriesComponent
+        SeriesComponent,
+        ViewComponent,
+        StartComponent,
+        ResultsComponent
     ],
     imports: [
         BrowserModule

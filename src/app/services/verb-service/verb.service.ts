@@ -2,14 +2,14 @@ import { Injectable } from '@angular/core';
 import take from 'lodash-es/take';
 import shuffle from 'lodash-es/shuffle';
 import jsonData from './options.json';
-import { SeriesItem, VerbDataDto, VerbDto } from './verb-service.service.types';
+import { SeriesItem, VerbDataDto, VerbDto } from './verb.service.types';
 
 const NUMBER_OF_VARIANTS = 4;
 
 @Injectable({
     providedIn: 'root'
 })
-export class VerbServiceService {
+export class VerbService {
 
     constructor() { }
 

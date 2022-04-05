@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { VerbServiceService } from './verb-service.service';
+import { ScoreService } from './score.service';
 
-describe('VerbServiceService', () => {
-  let service: VerbServiceService;
+describe('ScoreServiceService', () => {
+  let service: ScoreService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(VerbServiceService);
+    service = TestBed.inject(ScoreService);
   });
 
   it('should be created', () => {

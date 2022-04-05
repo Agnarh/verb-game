@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Option } from '../../services/verb-service/verb-service.service.types';
+import { ScoreService } from 'src/app/services/score-service/score.service';
+import { Option } from '../../services/verb-service/verb.service.types';
 
 @Component({
     selector: 'app-option-list',
@@ -13,7 +14,7 @@ export class OptionListComponent implements OnInit {
     @Output() onIncrement: EventEmitter<void> = new EventEmitter();
     clickedId: number | null = null;
 
-    constructor() { }
+    constructor(private scoreService: ScoreService) { }
 
     ngOnInit(): void {
     }
@@ -25,6 +26,11 @@ export class OptionListComponent implements OnInit {
                 this.onIncrement.emit();
                 this.clickedId = null;
             }, 1000);
+
+            const chosenOption = this.options.find(option => option.id == id);
+            if (chosenOption && chosenOption.isCorrect) {
+                this.scoreService.increaseScore();
+            }
         }
     }
 }

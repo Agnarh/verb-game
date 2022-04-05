@@ -1,0 +1,5 @@
+<div>
+    <app-start *ngIf="currentView === 'start'" (onChangeView)="goToView('game')">Start</app-start>
+    <app-series *ngIf="currentView === 'game'" (onChangeView)="goToView('results')"></app-series>
+    <app-results *ngIf="currentView === 'results'" (onChangeView)="goToView('game')"></app-results>
+</div>
