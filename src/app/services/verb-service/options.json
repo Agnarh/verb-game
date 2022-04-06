@@ -1,48 +1,84 @@
 {
-    "options": [
-        {
-            "id": 1,
-            "text": "was/were, been",
-            "isCorrect": true
-        },
-        {
-            "id": 2,
-            "text": "been, was/were",
-            "isCorrect": false
-        },
-        {
-            "id": 3,
-            "text": "am, was/were",
-            "isCorrect": false
-        },
-        {
-            "id": 4,
-            "text": "am, been",
-            "isCorrect": false
-        }
-    ],
     "verbs": [
         {
-            "id": 1,
-            "text": "to be"
-        },
-        {
-            "id": 2,
-            "text": "become"
-        }
-    ],
-    "data": [
-        {
-            "id": 1,
-            "verbId": 1,
-            "correct": ["was/were, been"],
+            "text": "to be",
+            "correct": "was/were, been",
             "incorrect": ["been, was/were", "was, were", "been, am", "are/were, been"]
         },
         {
-            "id": 2,
-            "verbId": 2,
-            "correct": ["became, become"],
+            "text": "to become",
+            "correct": "became, become",
             "incorrect": ["became, became", "become, became", "becamed, becomed"]
+        },
+        {
+            "text": "to begin",
+            "correct": "began, begun",
+            "incorrect": ["began, begin", "begin, begun", "begun, begun", "begined, begun"]
+        },
+        {
+            "text": "to break",
+            "correct": "broke, broken",
+            "incorrect": ["broke, break", "broke, brouk", "breaked, broken", "broked, broken"]
+        },
+        {
+            "text": "to bring",
+            "correct": "brought, brought",
+            "incorrect": ["bringed, brang", "brang, brung", "brought, broughten", "brung, brung"]
+        },
+        {
+            "text": "to buy",
+            "correct": "bought, bought",
+            "incorrect": ["buyed, buyed", "bought, boughten", "buy, buyen", "boughten, bought"]
+        },
+        {
+            "text": "to build",
+            "correct": "built, built",
+            "incorrect": ["builded, built", "build, build", "built, builten", "build, boult"]
+        },
+        {
+            "text": "to choose",
+            "correct": "chose, chosen",
+            "incorrect": ["choosed, chosen", "chosed, chosen", "chose, chose", "chose, chouset"]
+        },
+        {
+            "text": "to come",
+            "correct": "came, come",
+            "incorrect": ["comed, come", "comed, came", "come, came", "came, came"]
+        },
+        {
+            "text": "to cost",
+            "correct": "cost, cost",
+            "incorrect": ["costed, coughst", "costed, costen", "cost, costen", "cast, casten"]
+        },
+        {
+            "text": "to cut",
+            "correct": "cut, cut",
+            "incorrect": ["cutted, cutten", "cut, cutten", "cught, cughten", "cate, cut"]
+        },
+        {
+            "text": "to do",
+            "correct": "did, done",
+            "incorrect": ["does, done", "did, diden", "did, did", "done, doned"]
+        },
+        {
+            "text": "to draw",
+            "correct": "drew, drawn",
+            "incorrect": ["drew, drewen", "draw, drawn", "drawn, drew", "drowen, drawn"]
+        },
+        {
+            "text": "to drive",
+            "correct": "drove, driven",
+            "incorrect": ["drev, dreven", "drived, driven", "driven, drought", "drive, drive"]
+        },
+        {
+            "text": "to eat",
+            "correct": "ate, eaten",
+            "incorrect": ["eated, eaten", "ate, ated", "eaten, eaten", "eat, eat"]
+        },
+        {
+            "text": "to feel",
+            "correct": "felt, felt",
+            "incorrect": ["feeled, felt", "felt, feelten", "feelen, felt", "feeld, felt"]
         }
     ]
 }

@@ -10,13 +10,7 @@ export type SeriesItem = {
 };
 
 export type VerbDto = {
-    id: number;
     text: string;
-};
-
-export type VerbDataDto = {
-    id: number;
-    verbId: number;
-    correct: string[];
+    correct: string;
     incorrect: string[];
 };
