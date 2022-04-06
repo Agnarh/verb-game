@@ -13,9 +13,9 @@ export class VerbService {
 
     constructor() { }
 
-    generateSeries(): SeriesItem[] {
+    generateSeries(total: number): SeriesItem[] {
         const { verbs, data } = jsonData;
-        const result = take(verbs, verbs.length)
+        const result = take(verbs, total)
             .map((verb: VerbDto) => {
                 const result = [];
                 const verbData = data.find((_verbData: VerbDataDto) => _verbData.verbId === verb.id);

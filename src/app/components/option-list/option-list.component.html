@@ -3,7 +3,11 @@
     <ul class="list">
         <li
             class="option-item"
-            [ngClass]="{ 'correct': clickedId !== null && option.isCorrect, 'wrong': clickedId === option.id && !option.isCorrect }"
+            [ngClass]="{
+                'correct': clickedId !== null && option.isCorrect,
+                'wrong': clickedId === option.id && !option.isCorrect,
+                'selectable': clickedId === null
+            }"
             *ngFor="let option of options"
             (click)="onOptionItemClick(option.id)"
         >

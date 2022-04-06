@@ -24,9 +24,12 @@
             padding: 10px;
             border: 2px solid black;
             border-radius: 15px;
-            cursor: pointer;
 
-            &:hover {
+            &.selectable {
+                cursor: pointer;
+            }
+
+            &:hover.selectable {
                 background-color: #ccc;
             }
 

@@ -19,7 +19,7 @@ export class SeriesComponent implements OnInit {
         private scoreService: ScoreService) { }
 
     ngOnInit(): void {
-        this.series = this.verbService.generateSeries();
+        this.series = this.verbService.generateSeries(this.total);
         this.scoreService.init(this.total);
     }
 
