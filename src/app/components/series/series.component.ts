@@ -1,7 +1,8 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
 import { ScoreService } from 'src/app/services/score-service/score.service';
 import { VerbService } from 'src/app/services/verb-service/verb.service';
-import { Option, SeriesItem } from '../../services/verb-service/verb.service.types';
+import { SeriesItem } from '../../services/verb-service/verb.service.types';
+import { ProgressComponent } from '../progress/progress.component';
 
 @Component({
     selector: 'app-series',
@@ -9,6 +10,8 @@ import { Option, SeriesItem } from '../../services/verb-service/verb.service.typ
     styleUrls: ['./series.component.scss']
 })
 export class SeriesComponent implements OnInit {
+    @ViewChild(ProgressComponent)
+    private progressComponent!: ProgressComponent;
     @Output() onChangeView: EventEmitter<void> = new EventEmitter();
     current: number = 1;
     total: number = 10;
@@ -29,5 +32,9 @@ export class SeriesComponent implements OnInit {
         } else {
             this.onChangeView.emit();
         }
+    }
+
+    incrementProgress(): void {
+        this.progressComponent.incrementProgress();
     }
 }

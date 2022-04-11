@@ -6,17 +6,21 @@ import { Component, Input, OnInit } from '@angular/core';
     styleUrls: ['./progress.component.scss']
 })
 export class ProgressComponent implements OnInit {
+    @Input() total: number = 0;
+    currentProgress: number = 0;
+    
     _progressValue: number = 0;
     get value() {
-        return this._progressValue;
-    }
-    @Input() set value(progressValue: number) {
-        this._progressValue = Math.round(progressValue * 100);
+        return Math.round(this.currentProgress * 100 / this.total);
     }
 
     constructor() { }
 
     ngOnInit(): void {
+        this.currentProgress = 0;
     }
 
+    incrementProgress() {
+        this.currentProgress++;
+    }
 }

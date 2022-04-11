@@ -3,5 +3,6 @@
     [options]="series[current-1].options"
     [verb]="series[current-1].verb"
     (onIncrement)="increment()"
+    (onClick)="incrementProgress()"
 ></app-option-list>
-<app-progress [value]="(current-1)/total"></app-progress>
+<app-progress [total]="total"></app-progress>

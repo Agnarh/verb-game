@@ -12,6 +12,7 @@ export class OptionListComponent implements OnInit {
     @Input() public options: Option[] = [];
     @Input() public verb: string = '';
     @Output() onIncrement: EventEmitter<void> = new EventEmitter();
+    @Output() onClick: EventEmitter<void> = new EventEmitter();
     clickedId: number | null = null;
 
     constructor(private scoreService: ScoreService) { }
@@ -32,5 +33,7 @@ export class OptionListComponent implements OnInit {
                 this.scoreService.increaseScore();
             }
         }
+
+        this.onClick.emit();
     }
 }
