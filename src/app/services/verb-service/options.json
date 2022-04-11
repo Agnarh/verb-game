@@ -79,6 +79,26 @@
             "text": "to feel",
             "correct": "felt, felt",
             "incorrect": ["feeled, felt", "felt, feelten", "feelen, felt", "feeld, felt"]
+        },
+        {
+            "text": "to find",
+            "correct": "found, found",
+            "incorrect": ["finded, found", "found, fount", "found, finded", "find, find"]
+        },
+        {
+            "text": "to get",
+            "correct": "got, got",
+            "incorrect": ["getted, gought", "get, get", "geught, got", "getted, got"]
+        },
+        {
+            "text": "to give",
+            "correct": "gave, given",
+            "incorrect": ["gived, given", "gave, gaven", "given, gaved", "gaved, given"]
+        },
+        {
+            "text": "to go",
+            "correct": "went, gone",
+            "incorrect": ["goes, went", "gone, goned", "goned, gone", "went, goned"]
         }
     ]
 }
