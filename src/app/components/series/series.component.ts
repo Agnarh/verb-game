@@ -11,7 +11,7 @@ import { Option, SeriesItem } from '../../services/verb-service/verb.service.typ
 export class SeriesComponent implements OnInit {
     @Output() onChangeView: EventEmitter<void> = new EventEmitter();
     current: number = 1;
-    total: number = 2;
+    total: number = 10;
     series: SeriesItem[] = [];
 
     constructor(

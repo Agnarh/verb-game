@@ -8,6 +8,7 @@ import { SeriesComponent } from './components/series/series.component';
 import { ViewComponent } from './components/view/view.component';
 import { StartComponent } from './components/start/start.component';
 import { ResultsComponent } from './components/results/results.component';
+import { ProgressComponent } from './components/progress/progress.component';
 
 @NgModule({
     declarations: [
@@ -17,7 +18,8 @@ import { ResultsComponent } from './components/results/results.component';
         SeriesComponent,
         ViewComponent,
         StartComponent,
-        ResultsComponent
+        ResultsComponent,
+        ProgressComponent
     ],
     imports: [
         BrowserModule
