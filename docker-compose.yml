@@ -1,0 +1,7 @@
+version: "3.7"
+services:
+    verb-game:
+        container_name: verb-game
+        build: .
+        ports:
+            - "3000:3000"
